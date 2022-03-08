@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Semantic Layout Example</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      #header {
+        background: palegreen;
+      }
+
+      #nav {
+        background: coral;
+      }
+
+      #article {
+        background-color: deepskyblue;
+        display: inline-block;
+        padding: 24px;
+        width: 52%;
+      }
+
+      section {
+        background-color: royalblue;
+      }
+
+      #sidebar {
+        background-color: palevioletred;
+        display: inline-block;
+        width: 39%;
+      }
+
+      #footer {
+        background: plum;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">HEADER</header>
+    <nav id="nav">NAVIGATION BAR</nav>
+    <main id="main">
+       <article id="article">
+         <h1>Minecraft is best game</h1>
+         <section>
+           <h2>Reason 1: Fun times</h2>
+           <p>blocks</P>
+         </section>
+         <section>
+           <h2>Reason 2: Minecraft Bee</h2>
+           <p> smol buzz baby</p>
+         </section>
+       </article>
+       <aside id="sidebar">SIDEBAR</aside>
+    </main>
+    <footer id="footer">FOOTER</footer>
+  </body>
+</html>
