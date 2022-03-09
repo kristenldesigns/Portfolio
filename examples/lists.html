@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>List Examples</title>
+    <style>
+      #fruits {
+        list-style-type: circle;
+      }
+
+      #fruits li{
+        color: rebeccapurple;
+      }
+
+      #fruits li:first-child {
+        color: orange;
+      }
+
+      #fruits li:nth-child(3) {
+        color:green;
+      }
+
+      #myNavBar ul{
+        background: linear-gradient(to right, aquamarine, green, darkslategrey);
+        list-style-type: none;
+        padding-inline-start: 0px;
+      }
+
+      #myNavBar ul li {
+        display: inline-block;
+        padding: 12px 24px;
+      }
+
+      #myNavBar ul li:hover {
+        background: linear-gradient(to right, darkslategrey, green, aquamarine)
+      }
+
+      #myNavBar ul li:active {
+        background: linear-gradient(to right, darkslategrey, green, aquamarine)
+      }
+
+      #cta {
+        float: right
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="myNavBar">
+     <ul>
+       <li>Home</li>
+       <li>Gallery</li>
+       <li>About Me</li>
+       <li id="cta">Sign Up</li>
+      </ul>
+    </nav>
+
+    <ol>
+      <li>Animal Crossing</li>
+      <li>Elden Ring</li>
+      <li>Minecraft</li>
+    </ol>
+
+    <ul id="fruits">
+      <li>Mango</li>
+      <li>Grapes</li>
+      <li>Watermelon</li>
+    </ul>
+  </body>
+</html>
