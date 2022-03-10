@@ -36,6 +36,30 @@
         font-size: 40px;
       }
 
+      #myNavBar ul{
+        background: linear-gradient(to right, pink, palevioletred,
+          hotpink, mediumvioletred);
+        list-style-type: none;
+        padding-inline-start: 0px;
+      }
+
+      #myNavBar ul li {
+        display: inline-block;
+        padding: 20px 24px;
+      }
+
+      #myNavBar ul li:hover {
+        background: plum;
+      }
+
+      #myNavBar ul li:active {
+        background: mediumpurple;
+      }
+
+      #cta {
+        float: right
+      }
+
 
 
     </style>
@@ -54,6 +78,15 @@
       <li><a href="https://www.wickedclothes.com/">Wicked Clothes</a></li>
       <li><a href="https://www.pokemon.com/us/">Pokemon</a></li>
     </ul>
+
+    <nav id="myNavBar">
+     <ul>
+       <li>Home</li>
+       <li>Gallery</li>
+       <li>About Me</li>
+       <li id="cta">Sign Up</li>
+      </ul>
+    </nav>
 
 
   </body>
