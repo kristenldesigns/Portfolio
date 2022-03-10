@@ -17,7 +17,7 @@
 
     #myNavBar ul li {
       display: inline-block;
-      padding: 50px 30px;
+      padding: 30px 30px;
     }
 
     #myNavBar ul li:hover {
@@ -29,29 +29,8 @@
       background: aliceblue;
     }
 
-    #icon {
-      text-align: left;
-      float: left;
-      margin-left: 150px;
-
-    }
-
     #name {
       text-align: center;
-    }
-
-    #collage {
-      text-align:right;
-      float: left;
-    }
-
-    #styleguide {
-      text-align: center;
-      float: right;
-    }
-
-    #donut {
-      float:right;
     }
 
     </style>
@@ -97,47 +76,55 @@
 
     </nav>
 
-    <div id="icon">
-      <img src="images/icondesign.jpg"
-      style="
-      height: 300px;
-      border: 5px dotted darkseagreen;
-      margin-top: 20px;
-      " />
-    </div>
+    <div class="row">
+      <div class="column">
+        <img src="images/icondesign.jpg"
+          style="
+            height:300px;
+            border: 5px dotted lightpink;
+            margin-left: 100px;
+            margin-right:50px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+          ">
+        <img src="images/collage.jpg"
+          style="
+            height:300px;
+            border: 5px dotted lightgreen;
+            margin-left: 50px;
+            margin-right:50px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+          ">
+        <img src="images/styleguide.png"
+          style="
+            height:300px;
+            border: 5px dotted lightpink;
+            margin-left: 50px;
+            margin-right:50px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+          ">
+        <img src="images/donut.jpg"
+          style="
+            height:300px;
+            border: 5px dotted lightgreen;
+            margin-left: 50px;
+            margin-right:50px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+          ">
+      </div>
 
-    <div id="collage">
-      <img src="images/collage.jpg"
-      style="
-      height:300px;
-      border: 5px dotted lightpink;
-      margin-left: 50px;
-      margin-right:50px;
-      margin-top: 20px;
-      "
-    </div>
-
-    <div id="styleguide">
-      <img src="images/styleguide.png"
-      style="
-      height:300px;
-      border: 5px dotted lightpink;
-      margin-left: 50px;
-      margin-right:50px;
-      margin-top: 20px;
-      "
-    </div>
-
-    <div id="donut">
-      <img src="images/donut.jpg"
-      style="
-      height:300px;
-      border: 5px dotted lightgreen;
-      margin-left: 50px;
-      margin-right:50px;
-      margin-top: 20px;
-      "
-    </div>
+      <div style="
+        background: lightgreen;
+        border-radius: 50px;
+        height: 50px;
+        font-family: courier;
+        font-size: 20px;
+        text-align: center;">
+        Thank you for stopping by! Hope you enjoy your time here!
+      </div>
 
   </body>
 </html>
