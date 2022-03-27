@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Assignment 11</title>
+    <style>
+      body {
+        font-family: courier;
+      }
+      .container1 {
+        background-color: lightgreen;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: baseline;
+      }
+      .Child1 {
+        background-color: pink;
+        border: 2px solid purple;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child2 {
+        background-color: purple;
+        border: 2px solid pink;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child3 {
+        background-color: pink;
+        border: 2px solid purple;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child4 {
+        background-color: purple;
+        border: 2px solid pink;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+
+      .container2 {
+        background-color: lightblue;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: normal;
+      }
+      .Child5 {
+        background-color: lightyellow;
+        border: 2px solid palevioletred;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child6 {
+        background-color: palevioletred;
+        border: 2px solid lightyellow;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child7 {
+        background-color: lightyellow;
+        border: 2px solid palevioletred;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child8 {
+        background-color: palevioletred;
+        border: 2px solid lightyellow;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+
+      .container3 {
+        background-color: lightpink;
+        height: 500px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+      }
+      .Child9 {
+        background-color: skyblue;
+        border: 2px solid seagreen;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child10 {
+        background-color: seagreen;
+        border: 2px solid skyblue;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child11 {
+        background-color: skyblue;
+        border: 2px solid seagreen;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child12 {
+        background-color: seagreen;
+        border: 2px solid skyblue;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+
+      .container4 {
+        background-color: lightyellow;
+        border-radius: 4px;
+        display: flex;
+        height: 420px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        justify-content: flex-start;
+        align-items: first-baseline;
+      }
+      .Child13 {
+        background-color: lightgreen;
+        border: 2px solid mediumpurple;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child14 {
+        background-color: mediumpurple;
+        border: 2px solid lightgreen;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child15 {
+        background-color: lightgreen;
+        border: 2px solid mediumpurple;
+        border-radius: 4px;
+        height: 100px;
+        width: 60px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+      .Child16 {
+        background-color: mediumpurple;
+        border: 2px solid lightgreen;
+        border-radius: 4px;
+        height: 60px;
+        width: 100px;
+        font-size: 45px;
+        font-family: courier;
+        text-align: center;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="container1">
+      <div class="Child1">A</div>
+      <div class="Child2">B</div>
+      <div class="Child3">C</div>
+      <div class="Child4">D</div>
+    </div>
+    <div>
+      <div class="container2">
+      <div class="Child5">A</div>
+      <div class="Child6">B</div>
+      <div class="Child7">C</div>
+      <div class="Child8">D</div>
+    </div>
+    <div>
+      <div class="container3">
+      <div class="Child9">A</div>
+      <div class="Child10">B</div>
+      <div class="Child11">C</div>
+      <div class="Child12">D</div>
+    </div>
+    <div>
+      <div class="container4">
+      <div class="Child13">A</div>
+      <div class="Child14">B</div>
+      <div class="Child15">C</div>
+      <div class="Child16">D</div>
+    </div>
+  </body>
+</html>
