@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
 
@@ -14,8 +15,8 @@
     }
 
     #myNavBar {
-        height: 100%;
-        width: 180px;
+        max-width:100%;
+        height:auto;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -44,13 +45,14 @@
 
     #name {
       text-align: center;
-      border: 10px solid skyblue;
     }
     #article1 {
+      max-width:100%;
+      height:auto;
       font-family: impact;
       font-size: 23px;
       color: black;
-      margin-left: 235px;
+      margin-left: 40px;
       margin-top: 40px;
     }
 
@@ -60,12 +62,6 @@
   </head>
 
   <body>
-
-    <div id="name">
-    <img src="images/name2.png"
-      style="
-      height: 150px;"/>
-    </div>
 
     <nav id="myNavBar">
      <ul>
@@ -93,14 +89,22 @@
 
     </nav>
 
+    <div id="name">
+    <img src="images/name2.png"
+      style="
+      max-width:100%;
+      height:auto;
+      margin-top: 200px;"/>
+    </div>
+
     <div id="me">
       <img src="images/me.png"
       style="
-      height: 300px;
-      width: 500px;
+      max-width:100%;
+      height:auto;
       border-radius: 400px;
       box-shadow: 20px 10px 10px white;
-      margin-left: 250px;
+      float: left;
       margin-top: 40px;
       ">
     </div>
@@ -112,17 +116,14 @@
     <div id="logoss">
       <img src="images/logoss.png"
       style="
-      height: 400px;
-      margin: 25px;
+      max-width:100%;
+      height:auto;
       float: right;
       width: 500px;
       border-radius: 100px;
       box-shadow: 20px 10px 10px skyblue;
       "
     </div>
-
-
-
 
   </body>
 </html>
