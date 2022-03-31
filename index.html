@@ -3,14 +3,31 @@
   <head>
     <title>My Portfolio</title>
     <style>
+
+  {
+  box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 800px) {
+    #myNavBar, #name, #article {
+    width: 100%;
+    font-size:18px; 
+  }
+}
+    body {
+      background-image: url('images/multicolor.jpg');
+      background-size: 100%;
+    }
+
     #myNavBar ul {
-      background-color: lightpink;
+      background-color: white;
+      opacity: 0.8;
       list-style-type: none;
       padding-inline-start: 0px;
       text-align: center;
     }
     #myNavBar ul a{
-      color: palevioletred;
+      color: black;
       text-decoration: none;
     }
 
@@ -21,51 +38,42 @@
     }
 
     #myNavBar ul li:hover {
-      background: #66cc66;
+      background: deepskyblue;
     }
 
     #myNavBar ul li:active {
-      background: honeydew;
+      background: mediumpurple;
     }
 
     #name {
       text-align: center;
     }
-
-    #logo {
-      text-align: center;
+    #article1 {
+      font-family: impact;
+      font-size: 20px;
+      color: black;
     }
 
     </style>
 
   </head>
 
-  <body style="background: mistyrose;">
-
-    <div id="logo">
-      <img src="images/logooptions.png"
-      style=" height: 200px;">
-    </div>
+  <body>
 
     <div id="name">
-    <img src="images/name.png"
+    <img src="images/name2.png"
       style="
-      height: 100px;"/>
+      height: 150px;"/>
     </div>
 
     <nav id="myNavBar">
      <ul>
-       <li style="
-       font-family: impact;
-       font-size: 20px;">
-         <a href="https://kristenldesigns.github.io/Portfolio/">
-           Home</a></li>
 
        <li style="
        font-family: impact;
        font-size: 20px;">
          <a href="https://kristenldesigns.github.io/Portfolio/projects">
-           Projects</a></li>
+           Portfolio</a></li>
 
        <li style="
        font-family: impact;
@@ -84,17 +92,21 @@
 
     </nav>
 
-    <section id="intro"
-    style="
-    font-family: impact;
-    font-size: 20px;
-    color: grey;
-    text-align: center;
-    ">
-      My name is Kristen Langley and
-      I am currently studying Graphic Design
-      and Web Development.
-    </section>
+    <div id="me">
+      <img src="images/me.png"
+      style="
+      height: 300px;
+      width: 500px;
+      border-radius: 400px;
+      box-shadow: 20px 10px 10px white;
+      margin-left: 80px;
+      margin-top: 40px;
+      ">
+    </div>
+
+    <article id="article1">
+      Welcome to My Creative World! I really hope you enjoy my space!
+    </article>
 
 
 
