@@ -5,23 +5,30 @@
     <title>My Portfolio</title>
     <style>
 
-  {
-  box-sizing: border-box;
-  }
-
+    @media screen and (min-width: 800px) {
+        #myNavBar, #name, #logoss, #head {
+          font-size: 36px;
+        }
+      }
     body {
-      background-color: paleturquoise;
+      box-sizing: border-box;
     }
 
+    body {
+      background-image: url(images/cloud.jpg);
+      background opacity: 70%;
+    }
+    @media screen and (max-width: 479px) {
+      #myNavBar, #name, #logoss, #head {
+          font-size: 16px;
+        }
+      }
     #myNavBar {
-        max-width:100%;
-        height:auto;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
+        height: 80px;;
+        width: 100%;
+        text-align: center;
         background-color: white;
-        overflow-x: hidden;
+        opacity: 70%;
     }
     #myNavBar ul a{
       color: black;
@@ -35,25 +42,27 @@
     }
 
     #myNavBar ul li:hover {
-      background: deepskyblue;
+      background: skyblue;
     }
 
     #myNavBar ul li:active {
-      background: mediumpurple;
+      background: lightblue;
     }
 
     #name {
       text-align: center;
     }
-    #article1 {
-      max-width:100%;
-      height:auto;
-      font-family: impact;
-      font-size: 40px;
-      color: black;
+    #head {
       text-align: center;
-      margin-left: 40px;
-      margin-top: 40px;
+    }
+    #head :hover {
+      color: white;
+      opacity: 90%
+    }
+
+    #logoss :hover{
+      color: white;
+      opacity: 90%;
     }
 
 
@@ -68,20 +77,20 @@
 
        <li style="
        font-family: impact;
-       font-size: 20px;">
+       font-size: 30px;">
          <a href="https://kristenldesigns.github.io/Portfolio/projects">
            Gallery</a></li>
 
        <li style="
        font-family: impact;
-       font-size: 20px;">
+       font-size: 30px;">
          <a href="https://kristenldesigns.github.io/Portfolio/aboutme">
            About Me</a></li>
 
 
        <li style="
        font-family: impact;
-       font-size: 20px;">
+       font-size: 30px;">
          <a href="https://kristenldesigns.github.io/Portfolio/contact">
            Contact</a></li>
      </li>
@@ -90,44 +99,24 @@
     </nav>
 
     <div id="name">
-    <img src="images/name2.png"
-      style="
-      max-width:100%;
-      height:auto;
-      margin-top: 200px;"/>
+      <img src="images/name2.png"
+        style="
+        width: 80%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 100px;
+        "/>
     </div>
 
-    <div id="me">
-      <img src="images/me.png"
+    <div id="head">
+      <img src="images/headcloud.png"
       style="
-      max-width:100%;
-      height:auto;
-      border-radius: 400px;
-      box-shadow: 20px 10px 10px white;
-      float: left;
-      margin-top: 40px;
-      ">
-    </div>
-
-    <article id="article1">
-      Welcome to My Creative World!
-    </article>
-
-    <div id="logoss">
-      <img src="images/logoss.png"
-      style="
-      max-width:100%;
-      height:auto;
-      border-radius: 100px;
-      box-shadow: 20px 10px 10px white;
-      margin-top: 30px;
-
+      width: 80%;
+      height: auto;
+      margin-left: 200px;
       "
     </div>
 
-    <article id="article1">
-      I hope you enjoy my space!
-    </article>
 
   </body>
 </html>

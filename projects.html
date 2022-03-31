@@ -4,15 +4,40 @@
     <title>My Projects</title>
   </head>
   <body>
-    <h1 id="heading" >
-      Welcome to My Projects!
-  </h1>
+
     <style>
+
     body {
-      background-image: url('images/purple.jpg');
+      background-image: url('images/purplecloud.jpg');
       background-size: 100%;
-      background-repeat: repeat;
     }
+
+    #myNavBar {
+        height: 70px;;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        opacity: 70%;
+    }
+    #myNavBar ul a{
+      color: black;
+      text-decoration: none;
+    }
+
+    #myNavBar ul li {
+      display: inline-block;
+      padding: 20px 20px;
+      margin-right: 45px;
+    }
+
+    #myNavBar ul li:hover {
+      background: mediumpurple;
+    }
+
+    #myNavBar ul li:active {
+      background: lightpink;
+    }
+
     #heading {
     font-family: impact;
     font-size: 60px;
@@ -21,30 +46,63 @@
     "
     }
     #heading:hover {
-      color: purple;
+      color: indigo;
     }
+
     div.gallery {
-      margin: 10px;
-      border: 6px solid deepskyblue;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 40px;
+      border: 6px solid mediumpurple;
       display: inline-block;
       width: 250px;
       height: 350px;
+      padding: 10px;
+      border-radius: 20px;
+      text-align: center;
     }
 
     div.gallery:hover {
-      border: 8px solid mediumpurple;
+      border: 10px solid indigo;
     }
 
     div.gallery img {
       width: 250px;
       height: 350px;
+      border-radius: 20px;
     }
 
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
     </style>
+
+    <nav id="myNavBar">
+     <ul>
+
+       <li style="
+       font-family: impact;
+       font-size: 20px;">
+         <a href="https://kristenldesigns.github.io/Portfolio/projects">
+           Gallery</a></li>
+
+       <li style="
+       font-family: impact;
+       font-size: 20px;">
+         <a href="https://kristenldesigns.github.io/Portfolio/aboutme">
+           About Me</a></li>
+
+
+       <li style="
+       font-family: impact;
+       font-size: 20px;">
+         <a href="https://kristenldesigns.github.io/Portfolio/contact">
+           Contact</a></li>
+     </li>
+      </ul>
+
+    </nav>
+
+    <h1 id="heading" >
+      Welcome to My Projects!
+  </h1>
 
 
     <div class="gallery">
