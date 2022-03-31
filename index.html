@@ -7,24 +7,20 @@
   {
   box-sizing: border-box;
   }
-
-  @media screen and (max-width: 800px) {
-    #myNavBar, #name, #article {
-    width: 100%;
-    font-size:18px; 
-  }
-}
     body {
       background-image: url('images/multicolor.jpg');
       background-size: 100%;
     }
 
-    #myNavBar ul {
-      background-color: white;
-      opacity: 0.8;
-      list-style-type: none;
-      padding-inline-start: 0px;
-      text-align: center;
+    #myNavBar {
+        height: 100%;
+        width: 180px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
     }
     #myNavBar ul a{
       color: black;
@@ -47,11 +43,14 @@
 
     #name {
       text-align: center;
+      border: 10px solid skyblue;
     }
     #article1 {
       font-family: impact;
-      font-size: 20px;
+      font-size: 23px;
       color: black;
+      margin-left: 235px;
+      margin-top: 40px;
     }
 
     </style>
@@ -99,13 +98,13 @@
       width: 500px;
       border-radius: 400px;
       box-shadow: 20px 10px 10px white;
-      margin-left: 80px;
+      margin-left: 250px;
       margin-top: 40px;
       ">
     </div>
 
     <article id="article1">
-      Welcome to My Creative World! I really hope you enjoy my space!
+      Welcome to My Creative World! I hope you enjoy my space!
     </article>
 
 
