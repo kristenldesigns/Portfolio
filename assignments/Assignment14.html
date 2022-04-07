@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Assignment 14</title>
+    <style>
+      #firstNameId, #lastNameId {
+        margin-bottom: 15px;
+        margin-left: 10px;
+      }
+      #dateId {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <p>What is your name?</p>
+      <div>
+        <label for="firstNameId">First Name:</label>
+        <input type="text" id="firstNameId" name="firstName">
+      </div>
+      <div>
+        <label for="lastNameId">Last Name:</label>
+        <input type="text" id="lastNameId" name="lastName">
+      </div>
+
+      <div>
+        <label for="favshowId">Tell me what is your favorite animated TV show is.</label>
+        <br>
+        <textarea id="faveshowId" name="favshow" rows="6" cols="35">
+          What is it and Why? Explain in Detail!
+        </textarea>
+      </div>
+
+      <p>Which movie do you like the most?</p>
+      <div>
+        <input type="radio" id="rugratRadio" name="movie1" value="rugrat">
+        <label for="rugratRadio">The Rugrat Movie</label>
+      </div>
+      <div>
+        <input type="radio" id="howlRadio" name="movie2" value="howl">
+        <label for="howlRadio">Howl's Moving Castle</label>
+      </div>
+      <div>
+        <input type="radio" id="pokeRadio" name="movie3" value="poke">
+        <label for="pokeRadio">The Pokemon Movie</label>
+      </div>
+
+      <p>What is your favorite video game?</p>
+      <div>
+        <input type="checkbox" id="overCheckbox" name="game1" value="over">
+        <label for="overCheckbox">Overwatch</label>
+      </div>
+      <div>
+        <input type="checkbox" id="craftCheckbox" name="game2" value="craft">
+        <label for="craftCheckbox">Minecraft</label>
+      </div>
+      <div>
+        <input type="checkbox" id="tinyCheckbox" name="game3" value="tiny">
+        <label for="tinyCheckbox">Tiny Tina's Wonderland</label>
+      </div>
+      <div>
+        <input type="checkbox" id="noneCheckbox" name="game4" value="none">
+        <label for="noneCheckbox">I don't like video games</label>
+      </div>
+
+      <div>
+        <label for="dateId">When is your mother's birthday?</label>
+        <input type="date" id="dateId" name="motherbday">
+      </div>
+
+      <div>
+        <label for="foodGroupId">Who is your favorite kpop idol?</label>
+        <select id="idolGroupId" name="kpopidol">
+          <option value="bts">Kim Taehyung</option>
+          <option value="bigbang">Kwon Ji-yong</option>
+          <option value="twice">Park Ji-hyo</option>
+          <option value="g-idle">Minnie</option>
+          <option value="Seventeen">Choi Seungcheol</option>
+        </select>
+      </div>
+    </form>
+  </body>
+</html>
