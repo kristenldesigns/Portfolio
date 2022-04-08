@@ -1,60 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="utf-8">
     <title>George R.R. Martin Website</title>
+
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel&family=Dancing+Script&family=MedievalSharp&family=Montaga&family=Poppins:wght@100;200&family=Supermercado+One&display=swap');
+
       body {
         background-image: url("../../images/background.jpg");
         background-size: cover;
         background-repeat: no repeat;
-        background-attachment: fixed;
-      }
-      .navbar {
-       grid-area: nav;
-       background-size: cover;
       }
 
+       #text {
+         margin-left: 23px;
+       }
+       .title {
+         grid-area: title;
+         grid-row: 1;
+         margin-left: 100px;
+       }
 
+       .nav {
+         grid-area: nav;
+         background-size:  cover;
+       }
+
+     .logo {
+       grid-area: logo;
+       width: 19%;
+     }
+
+     .logo {
+       position: relative;
+       max-width: 100%;
+       width: 360px;
+     }
+
+     .header {
+       grid-area: header;
+       height: 300px;
+       background-image: url("../../images/slide.jpeg");
+       background-position: center;
+
+     }
+     .content {
+       grid-area: content;
+       height: 220px;
+     }
+     .content2 {
+       grid-area: content2;
+       height: 1080px;
+       width:
+     }
+     .content3 {
+       background-color: #D8D8D8;
+       grid-area: content3;
+       height: 1150px;
+       padding: 20px;
+       margin-bottom: 20px;
+     }
+
+     .footer {
+       grid-area: footer;
+       height: 150px;
+       text-align: center;
+     }
+
+     .navbar li a {
+       text-decoration: none;
+       font-family: 'Montaga', serif;
+       color: black;
+       list-style: none;
+       margin: 25px;
+     }
+     .navbar {
+       list-style: none;
+       text-align:  center;
+
+     }
+     nav {
+       display: flex;
+       flex-direction: row;
+     }
+
+     nav a:hover {
+       background-image: linear-gradient(grey,white);
+
+     }
+
+     .blog {
+       padding: 30px;
+     }
+
+     #nextappearance {
+       background-image: url("../../images/appearance.png");
+       height: 200px;
+     }
+
+     #nextpublication {
+       background-image: url("../../images/publication.png");
+       background-repeat: no-repeat;
+       height: 300px;
+     }
+
+     #valyrian {
+       background-image: url("../../images/valyrian.jpeg");
+       background-repeat: no-repeat;
+       height: 240px;
+     }
+
+     #coach {
+       background-image: url("../../images/coach.jpeg");
+       background-repeat: no-repeat;
+       height: 240px;
+
+     }
+     .Grid {
+       display: grid;
+       grid-template-columns: 1fr 333px 334px 333px 1fr;
+       grid-auto-rows: minmax(0px, auto);
+       gap: 10px 0px;
+
+       grid-template-areas:
+         "gutter1 logo logo logo gutter2"
+         "gutter1 title title title gutter2"
+         "gutter1 nav nav nav gutter2"
+         "gutter1 header header header gutter2"
+         "gutter1 content content content gutter2"
+         "gutter1 content2 content3 content3 gutter2"
+         "gutter1 footer footer footer gutter2";
+     }
+     #gutter1 {
+       border-right:  1px solid grey;
+       grid-area: gutter1;
+       margin-right: 8px;
+
+     }
+     #gutter2 {
+       border-left: 1px solid grey;
+       grid-area: gutter2;
+       margin-left: 8px;
+     }
+
+
+     .header, .content3 {
+       border: 4px solid grey;
+       margin: 10px;
+     }
+
+     img.contentimg {
+       border: 4px solid grey;
+       margin-left: 9px;
+       height: 200px;
+     }
+     #valyrian, #coach, #nextpublication, #nextappearance {
+       border: 4px solid grey;
+       margin: 10px;
+     }
+
+     @media screen and (max-width: 1000px) {
+       .Grid {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-areas:
+         "logo"
+         "title"
+         "nav"
+         "header"
+         "content"
+         "content2"
+         "content3"
+         "footer"
+       }
+
+       .content {
+         height: auto;
+       }
+
+       nav {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+       }
+       .header {
+         width: 94%;
+       }
+
+       img.contentimg {
+          align-content: center;
+          margin-left: auto;
+          height: auto;
+       }
+       .contentimg {
+         width: 100%;
+       }
+
+       #nextappearance, #nextpublication{
+         border: 4px solid grey;
+         width: auto;
+         padding: 13px;
+         background-size: cover;
+
+       }
+
+       #valyrian, #coach {
+        border: 4px solid grey;
+        width: auto;
+        height: 290px;
+        padding: 30px;
+        background-size: cover;
+      }
+
+      .content2 {
+       height: auto;
+       display: flex;
+       flex-direction: column;
+
+      }
+       .content3 {
+         width: 100;
+         height: 99%;
+
+       }
+       .footer {
+         width: 100%;
+       }
+       .title {
+         grid-area: title;
+         margin-left: 0px;
+         text-align: center;
+
+       }
+       img.titleimg {
+         width: 100%;
+
+       }
+       .logo {
+         width: 100%;
+         text-align: center;
+         position: relative;
+       }
 
     </style>
-  </head>
-  <body>
-    <div id="grid">
-      <header></header>
-      <nav>
-        <ul>
-          <a href="#"
-            <li>Home</li>
-          </a>
-          <a href="#"
-            <li>Not A Blog</li>
-          </a>
-          <a href="#"
-            <li>About George</li>
-          </a>
-          <a href="#"
-            <li>Books</li>
-          </a>
-          <a href="#"
-            <li>For Fans</li>
-          </a>
-          <a href="#"
-            <li>News</li>
-          </a>
-          <a href="#"
-            <li>Merchandise</li>
-          </a>
-        </ul>
-      </nav>
 
-      <div id="banner"></div>
-      <div id="cards"></div>
-      <aside></aside>
-      <main></main>
-      <footer> 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED. </footer>
-      <div id="bottom"></div>
-    </div>
+  </head>
+
+  <body>
+    <div class="Grid">
+      <div id="gutter1"></div>
+      <div id="gutter2"></div>
+
+      <div class="logo">
+        <img class= "logoimg" src="../../images/shield.png">
+      </div>
+
+      <header class="title">
+          <img class="titleimg" src="../../images/GRRMname.jpeg">
+          <a href="#">
+            <img src="../../images/app1.jpeg">
+         </a>
+         <a href="#">
+          <img src="../../images/app2.jpeg">
+         </a>
+         <a href="#">
+          <img src="../../images/app3.jpeg">
+         </a>
+
+      </header>
+
+      <div class="nav">
+        <nav class= "navbar">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">NOT A BLOG</a></li>
+          <li><a href="#">ABOUT GEORGE</a></li>
+          <li><a href="#">BOOKS</a></li>
+          <li><a href="#">FOR FANS</a></li>
+          <li><a href="#">NEWS</a></li>
+          <li><a href="#">MERCHANDISE</a></li>
+        </nav>
+      </div>
+
+      <div class="header">
+
+      </div>
+      <div class="content">
+        <img class= "contentimg" src="../../images/box1.jpeg"
+        width="310" >
+        <img class="contentimg" src="../../images/box2.png"
+        width="310">
+        <img class="contentimg" src="../../images/box3.jpeg"
+        width="310">
+
+
+
+      </div>
+      <aside class="content2">
+        <div id="nextappearance">
+          <div>
+          </div>
+        </div>
+
+        <div id="nextpublication">
+          <div>
+          </div>
+        </div>
+
+        <div id="valyrian">
+        </div>
+        <div id="coach">
+        </div>
+
+      </aside>
+
+
+      <main class="content3">
+        <h2>Current GRRM Blog Posts</h2>
+          <h3><a href="#">The Dragons Are Coming</a></h3>
+          <p>… they’re on the wing, and will be arriving in August.
+            Details here:
+            https://variety.com/2022/tv/news/game-of-thrones-house-of-the-dragon-premiere-date-1235215983/
+            <span><a href="#">Read More</a></span>
+          </p>
+
+          <h3><a href="#">The Rise of the Dragons</a></h3>
+          <p>We’re so excited to announce The Rise of The Dragon,
+            a lavish visual history of House Targaryen –
+            the iconic family at the heart of HBO’s Game of Thrones
+            prequel series, House of the Dragon –
+            featuring over 180 all-new…
+            <span><a href="#">Read More</a></span>
+          </p>
+          <br>
+          <h3><a href="#">Dealer Takes Two</a></h3>
+          <p>Kings and deuces may not be as iconic…
+            or ominous… a poker hand as aces and eights,
+            but it’s not a bad hand to be dealt… and Tor
+            will be dealing those cards to all the Wild Cards
+            fans out…
+            <span><a href="#">Read More</a></span>
+          </p>
+
+          <h3><a href="#">Random Updates and Bits o’ News</a></h3>
+          <p>I look around, and I don’t know where 2021 went.
+            I blinked and it was gone.   Not a year that I am going
+            to mourn much, any more than 2020.  A global pandemic,
+            so many deaths (including friends of mine,…
+            <span><a href="#">Read More</a></span>
+          </p>
+
+          <h3><a href="#">World of Fire and Blood Calendar 2023</a></h3>
+          <p>We have some beautiful art for next years calendar.
+            This time around we’re focusing on a whole
+            World of Ice and Fire theme with amazing new
+            artwork by a collaboration of amazing artists.
+            Check out some of their outstanding work coming…
+            <span><a href="#">Read More</a></span>
+          </p>
+
+          <h3><a href="#">End of an Era</a></h3>
+          <p>Our friend Janis Ian was in Santa Fe
+            last week, at the Jean Cocteau Cinema.
+            It was the first stop of her new tour.
+            She did three shows for us
+            (Thursday, Friday, and Saturday nights, all sold out),
+            and on…
+            <span><a href="#">Read More</a></span>
+          </p>
+
+          <h3><a href="#">The Cards Keep Turning</a></h3>
+          <p>Wild Cards fans have a lot to look forward
+            to in the next couple of years, in addition
+            to the Marvel comics series announced below.
+            We have three new books in the pipeline.
+            FULL HOUSE will be a collection of…
+            <span><a href="#">Read More</a></span>
+          </p>
+      <footer class="footer">
+         © 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.
+     </footer>
 
   </body>
 </html>
