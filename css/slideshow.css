@@ -6,3 +6,19 @@
 .slideshowImage {
   width: 500px;
 }
+
+#message {
+  font-family:courier;
+  text-align: center;
+  font-size: 30px;
+
+}
+
+#previous {
+  margin-left: 40px;
+  margin-top: 100px;
+}
+
+#next {
+  margin-top: 100px;
+}
