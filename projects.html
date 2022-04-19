@@ -2,116 +2,81 @@
 <html lang="en">
   <head>
     <title>My Projects</title>
-  </head>
-  <body>
-
     <style>
 
-    #myNavBar {
-        height: 65px;
-        width: 100%;
-        text-align: center;
-        background-color: palevioletred;
-        opacity: 60%;
+    body {
+      background-image: url(images/cloud.jpg);
+      background opacity: 70%;
     }
-    #myNavBar ul a{
-      color: black;
+
+    .sidenav {
+      height: 100%;
+      width: 150px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      padding-top: 20px;
+      opacity: 80%;
+    }
+
+    .sidenav a {
+      padding: 13px 8px 6px 25px;
       text-decoration: none;
+      font-size: 30px;
+      color: steelblue;
+      display: block;
     }
 
-    #myNavBar ul li {
-      display: inline-block;
-      padding: 20px 20px;
+    .sidenav a:hover {
+      color: lightgrey;
     }
 
-    #myNavBar ul li:hover {
-      background: lightpink;
+    .gallery {
+      width: 80%;
+      margin: 100px auto 50px;
+      display: grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 30px;
     }
-
-    #myNavBar ul li:active {
-      background: white;
-    }
-
-    #heading {
-    font-family: impact;
-    font-size: 60px;
-    color: lightpink;
-    text-align: center;
-    "
-    }
-    #heading:hover {
-      color: palevioletred;
-    }
-
-    div.gallery {
-      border: 3px solid lightpink;
-      display: inline-block;
+    .gallery img {
       width: 250px;
-      height: 350px;
-      padding: 10px;
-      border-radius: 20px;
-      text-align: center;
-      margin-left:60px;
+      height: 330px;
+      cursor: pointer;
+      border: 2px solid lightskyblue;
     }
 
-    div.gallery:hover {
-      border: 4px solid palevioletred;
-    }
-
-    div.gallery img {
-      width: 250px;
-      height: 350px;
+    .gallery img:hover {
+      transform: scale(1.6;
       border-radius: 20px;
-
     }
 
     </style>
+  </head>
+  <body>
 
-    <nav id="myNavBar">
-     <ul>
-
-       <li style="
-       font-family: impact;
-       font-size: 20px;">
-         <a href="https://kristenldesigns.github.io/Portfolio/projects">
-           Gallery</a></li>
-
-       <li style="
-       font-family: impact;
-       font-size: 20px;">
-         <a href="https://kristenldesigns.github.io/Portfolio/aboutme">
-           About Me</a></li>
-
-
-       <li style="
-       font-family: impact;
-       font-size: 20px;">
-         <a href="https://kristenldesigns.github.io/Portfolio/contact">
-           Contact</a></li>
-     </li>
-      </ul>
-
-    </nav>
-
-    <h1 id="heading" >
-      Welcome to My Projects!
-  </h1>
-
-
-    <div class="gallery">
-      <img src="images/collage.jpg" alt="Collage">
+    <div class="sidenav">
+      <a href="https://kristenldesigns.github.io/Portfolio/"
+      style="font-family: impact;">Home</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/projects"
+      style="font-family: impact;">Gallery</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/aboutme"
+      style="font-family: impact;">About Me</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/contact"
+      style="font-family: impact;">Contact</a>
     </div>
 
     <div class="gallery">
-        <img src="images/donut.jpg" alt="Donut">
-    </div>
-
-    <div class="gallery">
-        <img src="images/icondesign.jpg" alt="Icons">
-    </div>
-
-    <div class="gallery">
-        <img src="images/styleguide.png" alt="Styleguide">
+        <img src="images/collage.jpg">
+        <img src="images/donut.jpg">
+        <img src="images/icondesign.jpg">
+        <img src="images/styleguide.png">
+        <img src="images/smoothies.png">
+        <img src="images/givingbox.png">
+        <img src="images/designchallenge.png">
+        <img src="images/tshirt_design.jpg">
     </div>
 
   </body>

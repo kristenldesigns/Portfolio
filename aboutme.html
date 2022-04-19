@@ -3,7 +3,99 @@
   <head>
     <title>About Me!</title>
   </head>
+  <style>
+
+  body {
+    background-image: url(images/cloud.jpg);
+    background opacity: 70%;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 80%;
+  }
+
+  .sidenav a {
+    padding: 13px 8px 6px 25px;
+    text-decoration: none;
+    font-size: 30px;
+    color: steelblue;
+    display: block;
+  }
+
+  .sidenav a:hover {
+    color: lightgrey;
+  }
+
+  #countdown {
+    align-items: center;
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    font-size: 20px;
+    font-family: impact;
+  }
+  #grad {
+    text-align: center;
+    font-family: impact;
+  }
+
+  </style>
   <body>
-    <h1>About Me!</h1>
+
+    <div class="sidenav">
+      <a href="https://kristenldesigns.github.io/Portfolio/"
+      style="font-family: impact;">Home</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/projects"
+      style="font-family: impact;">Gallery</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/aboutme"
+      style="font-family: impact;">About Me</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/contact"
+      style="font-family: impact;">Contact</a>
+    </div>
+
+    <div id='grad'>
+      Days until Graduation!
+    </div>
+
+    <div id="countdown">
+      <h2 id="countdown">Countdown to Graduation!</h2>
+    </div>
+
+    <script type="text/javascript">
+      let deadline = new Date('June 22, 2022 13:00:00');
+
+      function setCountdown() {
+        let now = new Date();
+
+        let timeLeft = deadline.getTime() - now.getTime();
+
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor(
+          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        let seconds = Math.floor(
+          (timeLeft % (1000 * 60)) / 1000
+        );
+
+        document.getElementById('countdown').innerHTML =
+          days + ' days ' + hours + ' hours ' + minutes + ' minutes '
+            + seconds + ' seconds ';
+      }
+
+      setInterval(setCountdown, 1000);
+    </script>
+
   </body>
 </html>
