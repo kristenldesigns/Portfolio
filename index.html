@@ -27,17 +27,34 @@
       opacity: 80%;
     }
 
+
     .sidenav a {
-      padding: 13px 8px 6px 25px;
-      text-decoration: none;
-      font-size: 20px;
-      color: steelblue;
       display: block;
+      color: lightskyblue;
+      font-size: 20px;
+      padding: 16px;
+      text-decoration: none;
     }
 
-    .sidenav a:hover {
-      color: lightgrey;
+    .sidenav a.active {
+      background-color: #04AA6D;
+      color: white;
     }
+
+
+    .sidenav a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+
+  @media screen and (max-width: 800px) {
+    .sidenav, .images {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+  }
 
     #name {
       margin-top: 200px;
@@ -50,10 +67,18 @@
     .images {
       display: inline-flex;
       text-align: center;
-      width: 100%;
-      height: auto;
     }
 
+    @media screen and (max-width: 400px) {
+      .sidenav a {
+        text-align: center;
+        float: none;
+      }
+      #leftcolumn, #name, #rightcolumn {
+        width: 100%;
+        height: auto;
+      }
+    }
     </style>
 
   </head>

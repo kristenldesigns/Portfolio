@@ -8,6 +8,23 @@
       background-image: url(images/cloud.jpg);
       background opacity: 70%;
     }
+    .gallery {
+      width: 80%;
+      margin: 100px auto 50px;
+      display: grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 30px;
+    }
+    .gallery img {
+      width: 250px;
+      height: 300px;
+      cursor: pointer;
+      border: 2px solid lightskyblue;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.6);
+    }
 
     .sidenav {
       height: 100%;
@@ -23,35 +40,38 @@
     }
 
     .sidenav a {
-      padding: 13px 8px 6px 25px;
-      text-decoration: none;
-      font-size: 20px;
-      color: steelblue;
       display: block;
+      color: lightskyblue;
+      font-size: 20px;
+      padding: 16px;
+      text-decoration: none;
     }
 
-    .sidenav a:hover {
-      color: lightgrey;
+    .sidenav a.active {
+      background-color: #04AA6D;
+      color: white;
     }
 
-    .gallery {
-      width: 80%;
-      margin: 100px auto 50px;
-      display: grid;
-      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-      grid-gap: 30px;
-    }
-    .gallery img {
-      width: 250px;
-      height: 330px;
-      cursor: pointer;
-      border: 2px solid lightskyblue;
+    .sidenav a:hover:not(.active) {
+      background-color: #555;
+      color: white;
     }
 
-    .gallery img:hover {
-      transform: scale(1.6);
-      border-radius: 20px;
+  @media screen and (max-width: 800px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
     }
+    .sidenav a {float: left;}
+  }
+
+  @media screen and (max-width: 400px) {
+    .sidenav a {
+      text-align: center;
+      float: none;
+    }
+  }
 
     </style>
   </head>
@@ -70,12 +90,12 @@
 
     <div class="gallery">
         <img src="images/collage.jpg">
-        <img src="images/donut.jpg">
+        <img src="images/designchallenge.png">
         <img src="images/icondesign.jpg">
         <img src="images/styleguide.png">
         <img src="images/smoothies.png">
         <img src="images/givingbox.png">
-        <img src="images/designchallenge.png">
+        <img src="images/styleguide2.png">
         <img src="images/tshirt_design.jpg">
     </div>
 
