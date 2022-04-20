@@ -1,9 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Contact Page</title>
+    <title>Contact Submitted!</title>
+    <style>
+
+    body {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url(images/cloud.jpg);
+      background opacity: 70%;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      padding-top: 20px;
+      opacity: 80%;
+    }
+
+
+    .sidenav a {
+      display: block;
+      color: lightskyblue;
+      font-size: 20px;
+      padding: 20px;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .sidenav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+
+    .sidenav a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    #logo {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+  @media screen and (max-width: 800px) {
+    .sidenav, .images {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+  }
+
+    .info {
+      text-align: center;
+      font-family: sans-serif;
+    }
+    #main {
+      margin-top: 80px;
+    }
+
+  @media screen and (max-width: 400px) {
+    .sidenav a {
+      text-align: center;
+    }
+    #logo {
+      text-align: center;
+      margin-top: 100px;
+    }
+  }
+    </style>
   </head>
   <body>
-    <h1>This is my contact page</h1>
+
+    <div class="sidenav">
+    <a href="https://kristenldesigns.github.io/Portfolio/"
+    style="font-family: impact;">Home</a>
+    <a href="https://kristenldesigns.github.io/Portfolio/projects"
+    style="font-family: impact;">Gallery</a>
+    <a href="https://kristenldesigns.github.io/Portfolio/aboutme"
+    style="font-family: impact;">About Me</a>
+  </div>
+
+  <div class="info">
+    <h1 id="main">You're information has been submitted! Thank you for your time!</h1>
+  </div>
+  <div class="info">
+    <p>
+      I will get back to you as soon as I can! Have a lovely day!
+    </p>
+  </div>
+
+  <div id="logo">
+    <img src="images/logo.png"
+    style="width: 400px;
+    height:400px;">
+  </div>
   </body>
 </html>

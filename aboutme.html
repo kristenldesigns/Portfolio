@@ -12,7 +12,7 @@
 
   .sidenav {
     height: 100%;
-    width: 150px;
+    width: 200px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -28,8 +28,9 @@
     display: block;
     color: lightskyblue;
     font-size: 20px;
-    padding: 16px;
+    padding: 20px;
     text-decoration: none;
+    margin-left: 10px;
   }
 
   .sidenav a.active {
@@ -37,21 +38,24 @@
     color: white;
   }
 
-
   .sidenav a:hover:not(.active) {
     background-color: #555;
     color: white;
   }
 
-  .me {
+  .info {
+    display:block;
     text-align: center;
+    margin: 0px;
   }
 
-  #pic {
-    border-radius: 150px;
+  #paragraph {
+    font-family: sans-serif ;
+    margin-right: 300px;
+    margin-left: 300px;
+    text-align: justify;
+    letter-spacing: 4px;
   }
-
-
 
 @media screen and (max-width: 800px) {
   .sidenav {
@@ -68,7 +72,29 @@
     text-align: center;
     float: none;
   }
+  .info {
+    width: 100%;
+    height: auto;
+  }
 }
+
+  #firstNameId, #lastNameId, #message {
+    margin-bottom: 15px;
+    margin-left: 10px;
+
+  }
+  .names {
+    text-align:center;
+    font-size: 20px;
+  }
+
+  #question {
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 
 
   </style>
@@ -81,15 +107,43 @@
       style="font-family: impact;">Gallery</a>
       <a href="https://kristenldesigns.github.io/Portfolio/aboutme"
       style="font-family: impact;">About Me</a>
-      <a href="https://kristenldesigns.github.io/Portfolio/contact"
-      style="font-family: impact;">Contact</a>
     </div>
 
-    <div class="me">
-      <img id="pic" src="images/me.png"
-      style=" width: 520px;
-      height: 300px;">
+    <div class="info">
+      <img id="pic" src="images/picofme.png"
+      style=" width: 900px;
+      height: 850px;">
     </div>
 
+    <div class="info"id="paragraph">
+      <p>I have always had a passion for art and design, from illustration to photography,
+      I enjoy new and challenging projects to push me to expand my knowledge of graphic
+      design. Graduating in July of 2022, I am extremely excited to see where
+      my career takes me. Currently, I am looking for an internship to help me
+      grow, learn, and find my place in the world of graphic design.
+      If you're interested in connecting with me, send me a message down below!
+      I can't wait to hear from you!</p>
+    </div>
+
+    <form>
+      <div id="question">Contact Information!</div>
+      <div class="names">
+        <label for="firstNameId">First Name:</label>
+        <input type="text" id="firstNameId" name="firstName">
+      </div>
+      <div class="names">
+        <label for="lastNameId">Last Name:</label>
+        <input type="text" id="lastNameId" name="lastName">
+      </div>
+      <div class="names">
+        <label for="message">Leave A Message!</label>
+        <br>
+        <textarea id="message" name="Message" rows="8" cols="35">...</textarea>
+      </div>
+      <div class="names">
+        <input type="submit" id="submit" name="Submit"
+        value="Click Here to Submit">
+      </div>
+    </form>
   </body>
 </html>
