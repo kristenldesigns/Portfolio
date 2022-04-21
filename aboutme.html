@@ -20,7 +20,6 @@
     background-color: white;
     overflow-x: hidden;
     padding-top: 20px;
-    opacity: 80%;
   }
 
 
@@ -56,6 +55,19 @@
     text-align: justify;
     letter-spacing: 4px;
   }
+
+  #christmas {
+    align-items: center;
+    background-color: steelblue;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 10px;
+    font-family: sans-serif;
+  }
+
 
 @media screen and (max-width: 800px) {
   .sidenav {
@@ -145,5 +157,37 @@
         value="Click Here to Submit">
       </div>
     </form>
+
+    <div id="christmas">
+      <h1 id="countdown">Christmas Countdown!</h1>
+    </div>
+
+    <script type="text/javascript">
+      let deadline = new Date('January 1, 2023 13:00:00');
+
+      function setCountdown() {
+        let now = new Date();
+
+        // # of milliseconds between deadline and now
+        let timeLeft = deadline.getTime() - now.getTime();
+
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor(
+          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        let seconds = Math.floor(
+          (timeLeft % (1000 * 60)) / 1000
+        );
+
+        document.getElementById('countdown').innerHTML =
+          days + ' days ' + hours + ' hours ' + minutes + ' minutes '
+            + seconds + ' seconds ';
+      }
+
+      setInterval(setCountdown, 1000);
+    </script>
   </body>
 </html>
