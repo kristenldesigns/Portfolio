@@ -1,81 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <title>George R.R. Martin Website</title>
-    <style>
+    <style media="screen">
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel&family=Dancing+Script&family=MedievalSharp&family=Montaga&family=Poppins:wght@100;200&family=Supermercado+One&display=swap');
 
       body {
         background-image: url("../../images/background.jpg");
         background-size: cover;
         background-repeat: no repeat;
       }
-      .navbar {
-       grid-area: nav;
-       background-size: cover;
-      }
+      .nav {
+        grid-area: navbar;
+        background-size: cover;
+        text-align: center;
 
+      }
+      .nav a {
+        text-decoration: none;
+        color: black;
+        padding: 18px;
+        font-size: 20px;
+
+      }
       .grid {
+        display: grid;
+        grid-template-columns: 250px 300px 250px ;
+        grid-template-area:
+        ". header header header header header ."
+        ". navBar navBar navBar navBar navBar ."
+        ". banner banner banner banner banner ."
+        ". cards cards cards cards cards cards ."
+        ". side1 blogposts blogposts blogposts ."
+        ". side2 blogposts blogposts blogposts ."
+        ". side3 blogposts blogposts blogposts ."
+        ". side4 blogposts blogposts blogposts ."
+        ". footer footer footer footer footer ."
+      }
+
+      .header {
+        grid-area: header;
+        text-align: center;
 
       }
+
+      .banner {
+        grid-area: banner;
+        text-align: center;
+
+      }
+      .cards {
+        grid-area: cards;
+        text-align: center;
+
+      }
+      #side1 {
+        grid-area: sidecards;
+      }
+      #side2 {
+        grid-area: sidecards;
+      }
+      #side3 {
+        grid-area: sidecards;
+      }
+      #side4 {
+        grid-area: sidecards;
+      }
+
+      #side1 {
+        width: 300px;
+        height: 200px;
+      }
+      #side2 {
+        width: 300px;
+        height: 300px;
+      }
+      #side1, #side2, #side3, #slide,
+      #side4, #box1, #box2, #box3 {
+        border: 2px solid grey;
+      }
+      .blogposts {
+        grid-area: blogposts;
+        border: 2px solid grey;
+        background-color: white;
+        text-align: left;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+      @media screen and (max-width: 1000px) {
+        .grid {
+          display: grid;
+          ". header ."
+          ". navBar ."
+          ". banner ."
+          ". cards  ."
+          ". sidecards ."
+          ". blogposts ."
+          ". footer ."
+        }
+      #grrmName {
+        width: 100%;
+        height: auto;
+      }
+      #slide {
+        width: 100%;
+        height: auto;
+      }
+
+
 
     </style>
+
+
   </head>
   <body>
-    <div id="grid">
-      <header>
-        <img id="grrmName" src="../../images/GRRMname.jpeg">
 
+    <div id="grid">
+      <header class="header">
+        <img id="shield" src="../../images/shield.png">
+        <img id="grrmName" src="../../images/GRRMname.jpeg">
         <img class="apps" src="../../images/app1.jpeg">
         <img class="apps" src="../../images/app2.jpeg">
         <img class="apps" src="../../images/app3.jpeg">
 
       </header>
 
-
+      <div class="nav">
       <nav id="navBar">
         <ul>
           <a href="#"
-            <li>Home</li>
+            <li>HOME</li>
           </a>
           <a href="#"
-            <li>Not A Blog</li>
+            <li>NOT A BLOG</li>
           </a>
           <a href="#"
-            <li>About George</li>
+            <li>ABOUT GEORGE</li>
           </a>
           <a href="#"
-            <li>Books</li>
+            <li>BOOKS</li>
           </a>
           <a href="#"
-            <li>For Fans</li>
+            <li>FOR FANS</li>
           </a>
           <a href="#"
-            <li>News</li>
+            <li>NEWS</li>
           </a>
           <a href="#"
-            <li>Merchandise</li>
+            <li>MERCHANDISE</li>
           </a>
         </ul>
 
       </nav>
-      <div id="banner">
-        <img src="../../images/slide.jpeg"
+      </div>
 
+      <div class="banner">
+        <img id="slide" src="../../images/slide.jpeg"
       </div>
-      <div id="cards">
-        <img src="../../images/box1.jpeg">
-        <img src="../../images/box2.png">
-        <img src="../../images/box3.jpeg">
+
+      <div class="cards">
+        <img id="box1" src="../../images/box1.jpeg">
+        <img id="box2" src="../../images/box2.png">
+        <img id="box3" src="../../images/box3.jpeg">
       </div>
-      <aside>
-        <img src="../../images/appearance.png">
-        <img src="../../images/publication.png">
-        <img src="../../images/valyrian.jpeg">
+
+      <aside class="sidecards">
+        <img id="side1" src="../../images/appearance.png">
+        <img id="side2" src="../../images/publication.png">
+        <img id="side3" src="../../images/valyrian.jpeg">
+        <img id="side4" src="../../images/coach.jpeg">
 
 
       </aside>
-      <main class="content3">
+      <main class="blogposts">
         <h2>Current GRRM Blog Posts</h2>
           <h3><a href="#">The Dragons Are Coming</a></h3>
           <p>… they’re on the wing, and will be arriving in August.
@@ -137,6 +236,7 @@
             FULL HOUSE will be a collection of…
             <span><a href="#">Read More</a></span>
           </p>
+        </main>
       <footer class="footer">
          © 2022 GEORGE R.R. MARTIN. ALL RIGHTS RESERVED.
      </footer>
