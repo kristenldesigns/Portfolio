@@ -1,0 +1,112 @@
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+
+    body {
+      box-sizing: border-box;
+    }
+    body {
+      background-image: url(images/cloud.jpg);
+      background opacity: 70%;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      display: block;
+      color: lightskyblue;
+      font-size: 20px;
+      padding: 20px;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+    .sidenav a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+
+    .sidenav a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    .blog {
+      border-radius: 24px;
+      box-shadow: 24px 24px 30px 12px lightslategrey;
+      margin-left: 300px;
+      margin-right: 50px;
+      margin-top: 50px;
+      padding: 36px;
+      text-align: center;
+    }
+    .title {
+      border-radius: 24px;
+      box-shadow: 24px 24px 30px 12px lightslategrey;
+      margin-left: 300px;
+      margin-right: 50px;
+      margin-top: 50px;
+      padding: 36px;
+      text-align: center;
+    }
+
+  @media screen and (max-width: 800px) {
+    .sidenav, .images {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidenav a {float: left;}
+  }
+
+    @media screen and (max-width: 400px) {
+      .sidenav a {
+        text-align: center;
+      }
+    }
+    </style>
+
+  </head>
+  <body>
+    <div class="sidenav">
+      <a href="https://kristenldesigns.github.io/Portfolio/"
+      style="font-family: impact;">Home</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/projects"
+      style="font-family: impact;">Gallery</a>
+      <a href="https://kristenldesigns.github.io/Portfolio/aboutme"
+      style="font-family: impact;">About Me</a>
+    </div>
+
+    <div class="blog">
+      <h1>Blog Template</h1>
+    </div>
+
+    <div class="title">
+      <h2> Post title </h2>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <a href="#">Read More</a>
+    </div>
+
+
+
+
+  </body>
+</html>
